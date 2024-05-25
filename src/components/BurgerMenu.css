@@ -1,0 +1,60 @@
+/* src/components/BurgerMenu.css */
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 0px;  /* Pega el botón a la izquierda */
+    top: 20px;
+  }
+  
+  .bm-burger-bars {
+    background: #007bff;
+    border-radius: 5px;
+  }
+  
+  .bm-burger-bars-hover {
+    background: #0056b3;
+  }
+  
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+  
+  .bm-cross {
+    background: #fff;
+  }
+  
+  .bm-menu {
+    background: #292b2c;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+    top: 0;
+    left: 0;  /* Pega el menú a la izquierda */
+  }
+  
+  .bm-morph-shape {
+    fill: #292b2c;
+  }
+  
+  .bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+  }
+  
+  .bm-item {
+    display: block;
+    padding: 0.8em;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .bm-item:hover {
+    color: #007bff;
+  }
+  
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  

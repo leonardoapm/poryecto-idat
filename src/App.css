@@ -1,0 +1,111 @@
+/* App general styling */
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+  background-image: url('/background.jpg'); /* Utiliza la imagen de fondo */
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta la imagen para cubrir el fondo */
+}
+
+
+.lista-articulos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px;
+}
+
+.Articulo {
+  position: relative; /* Added to position the buttons absolutely within this container */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  text-align: left;
+  margin: 10px;
+}
+
+.ArticuloImagen {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-bottom: 1px solid #ddd;
+}
+
+.Articulo h3 {
+  margin: 10px 0;
+}
+
+.Articulo p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.edit-button, .delete-button {
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.edit-button {
+  background-color: #28a745;
+  top: 10px;
+  left: 10px;
+}
+
+.edit-button:hover {
+  background-color: #218838;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  top: 10px;
+  right: 10px;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .lista-articulos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Articulo {
+    width: 90%;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .Articulo {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .edit-button, .delete-button {
+    width: auto;
+    padding: 10px;
+  }
+}
